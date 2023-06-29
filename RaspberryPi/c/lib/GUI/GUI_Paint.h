@@ -17,7 +17,7 @@
 #define __GUI_PAINT_H
 
 #include "Debug.h"
-#include "LCD_1in54.h"
+#include "DEV_Config.h"//#include "LCD_1in54.h"
 #include "../Fonts/fonts.h"
 
 /**

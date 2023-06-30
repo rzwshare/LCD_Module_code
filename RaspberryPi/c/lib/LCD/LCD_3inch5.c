@@ -86,7 +86,7 @@ void LCD_3IN5_Init(void)
 	DEV_Delay_ms(120);
 
 	LCD_3IN5_Write_Command(0x36);
-	LCD_3IN5_WriteData_Byte(0x08);
+	LCD_3IN5_WriteData_Byte(0x48);
 
 	LCD_3IN5_Write_Command(0x3A);
 	LCD_3IN5_WriteData_Byte(0x55);
@@ -97,12 +97,7 @@ void LCD_3IN5_Init(void)
 
 	LCD_3IN5_Write_Command( 0xF0);     
 	LCD_3IN5_WriteData_Byte(0x96);   
-
-	LCD_3IN5_Write_Command( 0x36);     
-	LCD_3IN5_WriteData_Byte(0x48);   
-
-	LCD_3IN5_Write_Command( 0x3A);     
-	LCD_3IN5_WriteData_Byte(0x77);   
+   
 
 	LCD_3IN5_Write_Command( 0xB4);     //1-dot Inversion
 	LCD_3IN5_WriteData_Byte(0x01);   

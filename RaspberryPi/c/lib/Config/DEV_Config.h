@@ -64,23 +64,6 @@
 #define LCD_BL_0		DEV_Digital_Write(LCD_BL,0)
 #define LCD_BL_1		DEV_Digital_Write(LCD_BL,1)
 
-#define KEY_UP_PIN      6
-#define KEY_DOWN_PIN    19
-#define KEY_LEFT_PIN    5
-#define KEY_RIGHT_PIN   26
-#define KEY_PRESS_PIN   13
-#define KEY1_PIN        21
-#define KEY2_PIN        20
-#define KEY3_PIN        16
-
-#define GET_KEY_UP       		DEV_Digital_Read(KEY_UP_PIN)
-#define GET_KEY_DOWN     		DEV_Digital_Read(KEY_DOWN_PIN)
-#define GET_KEY_LEFT     		DEV_Digital_Read(KEY_LEFT_PIN)
-#define GET_KEY_RIGHT    		DEV_Digital_Read(KEY_RIGHT_PIN)
-#define GET_KEY_PRESS    		DEV_Digital_Read(KEY_PRESS_PIN)
-#define GET_KEY1         		DEV_Digital_Read(KEY1_PIN)
-#define GET_KEY2         		DEV_Digital_Read(KEY2_PIN)
-#define GET_KEY3         		DEV_Digital_Read(KEY3_PIN)
 
 #define LCD_SetBacklight(Value) DEV_SetBacklight(Value)
 

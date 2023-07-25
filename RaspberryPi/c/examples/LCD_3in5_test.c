@@ -35,6 +35,8 @@ void LCD_3IN5_test(void)
     Paint_NewImage(BlackImage, LCD_3IN5_WIDTH, LCD_3IN5_HEIGHT, 0, WHITE, 16);
     Paint_Clear(WHITE);
 	Paint_SetRotate(ROTATE_0);
+
+#if 0
     // /* GUI */
     printf("drawing...\r\n");
     // /*2.Drawing on the image*/
@@ -65,7 +67,9 @@ void LCD_3IN5_test(void)
     // /* show bmp */
 	printf("show bmp\r\n");
 	
-	GUI_ReadBmp("./pic/LCD_3inch5.bmp");    
+//	GUI_ReadBmp("./pic/LCD_3inch5.bmp");
+GUI_ReadBmp("/home/pi/LCD_Module_code/RaspberryPi/c/pic/LCD_3inch5.bmp");
+    #endif
     LCD_3IN5_Display((UBYTE *)BlackImage);
     DEV_Delay_ms(3000);
 	

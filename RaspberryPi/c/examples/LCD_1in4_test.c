@@ -65,7 +65,9 @@ void LCD_1IN4_test(void)
     // /* show bmp */
 	printf("show bmp\r\n");
 	
-	GUI_ReadBmp("./pic/LCD_1inch4.bmp");    
+//	GUI_ReadBmp("./pic/LCD_1inch4.bmp");
+  GUI_ReadBmp("/home/pi/LCD_Module_code/RaspberryPi/c/pic/LCD_1inch4.bmp");
+    
     LCD_1IN4_Display((UBYTE *)BlackImage);
     DEV_Delay_ms(3000);
 	

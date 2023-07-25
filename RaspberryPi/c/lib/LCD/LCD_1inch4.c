@@ -85,7 +85,7 @@ void LCD_1IN4_Init(void)
     DEV_Delay_ms(120);
 
     LCD_1IN4_Write_Command(0x36);
-    LCD_1IN4_WriteData_Byte(0x08);
+    LCD_1IN4_WriteData_Byte(0x00);//08
 
     LCD_1IN4_Write_Command(0x3A);
     LCD_1IN4_WriteData_Byte(0x05);
@@ -181,7 +181,7 @@ void LCD_1IN4_Init(void)
 	 
 
 
-    LCD_1IN4_Write_Command(0x11);
+    LCD_1IN4_Write_Command(0x21);
     DEV_Delay_ms(120);
     LCD_1IN4_Write_Command(0x29);
 }
